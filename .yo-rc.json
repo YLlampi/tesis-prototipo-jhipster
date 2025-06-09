@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "miPrimeraApp",
+    "buildTool": "maven",
+    "cacheProvider": null,
+    "clientFramework": "react",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1749437504872,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": null,
+    "enableTranslation": true,
+    "entities": [],
+    "feignClient": null,
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "ZDlhZDdmNTUwMDkwMzI2OTAzMjFlOTJmMzNhMDI1MjZhMjUyMzlmNGNiM2M3NWFmZGEwNDdjNjk4ZmY5OTgwNDk3OTkxMjAxZGM4NjBlOGRjYTkwMTM0YTk1ZmYxY2EwNWYwZDMxMDg2MzkwNzBjOTMxODMxNTIyOTc0Y2I4NDE=",
+    "languages": ["es"],
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "es",
+    "packageName": "com.mycompany.myapp",
+    "prodDatabaseType": "postgresql",
+    "reactive": true,
+    "serverPort": null,
+    "serviceDiscoveryType": null,
+    "syncUserWithIdp": null,
+    "testFrameworks": [],
+    "withAdminUi": true
+  }
+}
