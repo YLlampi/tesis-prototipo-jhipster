@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "changelogDate": "20250619005938"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "texto",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaCreacion",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Comentario",
+  "relationships": [
+    {
+      "otherEntityField": "titulo",
+      "otherEntityName": "publicacion",
+      "otherEntityRelationshipName": "comentario",
+      "relationshipName": "publicacion",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,27 @@
+{
+  "miPrimeraApp": {
+    "adjunto": {
+      "home": {
+        "title": "Adjuntos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Adjunto",
+        "createOrEditLabel": "Crear o editar Adjunto",
+        "notFound": "Ningún Adjuntos encontrado"
+      },
+      "created": "Un nuevo Adjunto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Adjunto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Adjunto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Adjunto {{ id }}?"
+      },
+      "detail": {
+        "title": "Adjunto"
+      },
+      "id": "ID",
+      "nombreArchivo": "Nombre Archivo",
+      "archivo": "Archivo",
+      "tipoMime": "Tipo Mime",
+      "publicacion": "Publicacion"
+    }
+  }
+}

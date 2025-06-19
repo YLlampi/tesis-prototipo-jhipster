@@ -1,0 +1,58 @@
+{
+  "annotations": {
+    "changelogDate": "20250619001148"
+  },
+  "applications": "*",
+  "documentation": "Modelo de Dominio para una aplicación de Blog (Versión Simplificada y Corregida).\\nSe enfoca en las entidades y relaciones para asegurar la generación.",
+  "fields": [
+    {
+      "fieldName": "titulo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "contenido",
+      "fieldType": "TextBlob",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaPublicacion",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Publicacion",
+  "relationships": [
+    {
+      "otherEntityName": "comentario",
+      "otherEntityRelationshipName": "publicacion",
+      "relationshipName": "comentario",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "adjunto",
+      "otherEntityRelationshipName": "publicacion",
+      "relationshipName": "adjunto",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "etiqueta",
+      "otherEntityRelationshipName": "publicacion",
+      "relationshipName": "etiqueta",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "autor",
+      "otherEntityRelationshipName": "publicacion",
+      "relationshipName": "autor",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

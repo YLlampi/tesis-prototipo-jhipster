@@ -1,0 +1,48 @@
+/**
+ * Modelo de Dominio para una aplicación de Blog (Versión Simplificada y Corregida).
+ * Se enfoca en las entidades y relaciones para asegurar la generación.
+ */
+
+entity Publicacion {
+  titulo String required minlength(5),
+  contenido TextBlob required,
+  fechaPublicacion Instant
+}
+
+entity Autor {
+  nombre String required,
+  email String required pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)
+}
+
+entity Etiqueta {
+  nombre String required minlength(2) unique
+}
+
+entity Comentario {
+  texto String required,
+  fechaCreacion Instant
+}
+
+entity Adjunto {
+  nombreArchivo String required,
+  archivo ImageBlob required,
+  tipoMime String
+}
+
+// --- Relaciones ---
+
+relationship OneToMany {
+  Autor{publicacion} to Publicacion{autor(nombre)},
+  Publicacion{comentario} to Comentario{publicacion(titulo)},
+  Publicacion{adjunto} to Adjunto{publicacion(titulo)}
+}
+
+relationship ManyToMany {
+  Publicacion{etiqueta(nombre)} to Etiqueta{publicacion}
+}
+
+// ----- LA CORRECCIÓN DEFINITIVA ESTÁ AQUÍ -----
+// Se le indica a JHipster que 'User' es una entidad incorporada.
+relationship OneToOne {
+  Autor{user} to User with builtInEntity
+}

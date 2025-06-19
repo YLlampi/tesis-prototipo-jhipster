@@ -1,0 +1,27 @@
+{
+  "miPrimeraApp": {
+    "autor": {
+      "home": {
+        "title": "Autors",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Autor",
+        "createOrEditLabel": "Crear o editar Autor",
+        "notFound": "Ningún Autors encontrado"
+      },
+      "created": "Un nuevo Autor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Autor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Autor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Autor {{ id }}?"
+      },
+      "detail": {
+        "title": "Autor"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "email": "Email",
+      "user": "User",
+      "publicacion": "Publicacion"
+    }
+  }
+}
